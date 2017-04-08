@@ -1,0 +1,19 @@
+{
+  "name": "retail-bob-backend",
+  "version": "1.0.0",
+  "description": "Backoffice Bob for Retail Bot Workshop and Demo ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chanakya Lokam",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.7.0",
+    "luis-sdk": "^1.0.1",
+    "moment": "^2.18.1",
+    "ping": "^0.2.2",
+    "restify": "^4.3.0",
+    "unirest": "^0.5.1"
+  }
+}

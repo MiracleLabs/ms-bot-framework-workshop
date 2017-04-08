@@ -1,0 +1,977 @@
+{
+  "luis_schema_version": "2.0.0",
+  "versionId": "0.1",
+  "name": "backoffice-bot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "intent.Capabilities"
+    },
+    {
+      "name": "intent.Greetings"
+    },
+    {
+      "name": "intent.HealthCheck"
+    },
+    {
+      "name": "intent.IdentifyEntity"
+    },
+    {
+      "name": "intent.NoHelp"
+    },
+    {
+      "name": "intent.ThankYou"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Environment",
+      "children": [
+        "QA",
+        "Test",
+        "Production",
+        "Development"
+      ]
+    },
+    {
+      "name": "Systems",
+      "children": [
+        "DataPower",
+        "SAP PI",
+        "IIB",
+        "SAP BASIS"
+      ]
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "DataPower",
+      "mode": true,
+      "words": "DataPower,Data Power",
+      "activated": true
+    },
+    {
+      "name": "Development",
+      "mode": true,
+      "words": "Development,Dev,DEV,Develop",
+      "activated": true
+    },
+    {
+      "name": "Production",
+      "mode": true,
+      "words": "Production,Prod",
+      "activated": true
+    },
+    {
+      "name": "Q/A",
+      "mode": true,
+      "words": "QA,Q / A,Q and A,Q & A,Q n A",
+      "activated": true
+    },
+    {
+      "name": "Testing",
+      "mode": true,
+      "words": "Testing,Test",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hello",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi how are you?",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hello, how are you doing?",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "yo",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "whats up",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "namaste",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "howdy",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "how are you doing",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hiya",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi there",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi how are you",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hello, hope you are doing good",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hey there",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "heya",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hello, how are you",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "hai",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "greetings",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "good how are you",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "good day",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "ciao",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "bonjour",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "aloha",
+      "intent": "intent.Greetings",
+      "entities": []
+    },
+    {
+      "text": "what can you do?",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what are your capabilities",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "tell me about yourself",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what things can you do",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what else",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what do you know",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "show me what you can do",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what can you do for me",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what can you do",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what can i say",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "please tell me your identity",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what are you",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what you can do",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "tell me what things you can do",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what is you capabilities",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "what are you capable of?",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "how are you going to help me",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "tell me your specifications",
+      "intent": "intent.Capabilities",
+      "entities": []
+    },
+    {
+      "text": "have a nice day!",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "have a good day",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "see you later",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "thank you for helping me",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "toodles",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "your welcome, have a nice day!",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "then bye",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "signing out",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "signing off",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "should go",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "should be going",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "see you",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "see ya soon",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "see ya later",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "see ya",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "run",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "over and out",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "ok bye",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "my time is up",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "logging off",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "leaving",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "later",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "i'm leaving",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "gtg",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "gotta run",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "gotta go",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "good night",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "good bye",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "farewell",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "cya",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "bye now",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "adios",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "adieu",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "go goodbye",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "chat with you later",
+      "intent": "intent.ThankYou",
+      "entities": []
+    },
+    {
+      "text": "can you help me to do a health check",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "need to check health check for servers",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "servers health check",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "health check",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "can i do a health check on the production environment?",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::Production",
+          "startPos": 31,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "need a health check",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "do health check of back office servers",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "helathcheck for systems",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "run a health check on the q/a environment.",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 26,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "healthcheck",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "run a check on all sap basis development enviorments",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::Development",
+          "startPos": 29,
+          "endPos": 39
+        },
+        {
+          "entity": "Systems::SAP BASIS",
+          "startPos": 19,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "run a health check",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "can you help me run a health check",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "run a health check on sap basis system",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Systems::SAP BASIS",
+          "startPos": 22,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "run a healthcheck for the sap pi qa environment",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 33,
+          "endPos": 34
+        },
+        {
+          "entity": "Systems::SAP PI",
+          "startPos": 26,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "run a healthcheck for the sap basis dev environment",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::Development",
+          "startPos": 36,
+          "endPos": 38
+        },
+        {
+          "entity": "Systems::SAP BASIS",
+          "startPos": 26,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "run a health check on qa environment please",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 22,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "run a health check for sap pi",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Systems::SAP PI",
+          "startPos": 23,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "run a health check for data power",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Systems::DataPower",
+          "startPos": 23,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "run a healthcheck",
+      "intent": "intent.HealthCheck",
+      "entities": []
+    },
+    {
+      "text": "run a health check for datapower",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Systems::DataPower",
+          "startPos": 23,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "run a health check for sap basis",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Systems::SAP BASIS",
+          "startPos": 23,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "run a health check for iib",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Systems::IIB",
+          "startPos": 23,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "run a health check on sap pi",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Systems::SAP PI",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "run a health check on q and a environment.",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 22,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "run a health test on the q/a environment for sap pi systems",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 25,
+          "endPos": 27
+        },
+        {
+          "entity": "Systems::SAP PI",
+          "startPos": 45,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "run a health test on iib systems in test environment.",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::Test",
+          "startPos": 36,
+          "endPos": 39
+        },
+        {
+          "entity": "Systems::IIB",
+          "startPos": 21,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "run a health check for the sap pi dev environment",
+      "intent": "intent.HealthCheck",
+      "entities": [
+        {
+          "entity": "Environment::Development",
+          "startPos": 34,
+          "endPos": 36
+        },
+        {
+          "entity": "Systems::SAP PI",
+          "startPos": 27,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "nothing",
+      "intent": "intent.NoHelp",
+      "entities": []
+    },
+    {
+      "text": "i'm done",
+      "intent": "intent.NoHelp",
+      "entities": []
+    },
+    {
+      "text": "i'm good",
+      "intent": "intent.NoHelp",
+      "entities": []
+    },
+    {
+      "text": "no help needed",
+      "intent": "intent.NoHelp",
+      "entities": []
+    },
+    {
+      "text": "never mind",
+      "intent": "intent.NoHelp",
+      "entities": []
+    },
+    {
+      "text": "sap pi",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Systems::SAP PI",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "sap basis",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Systems::SAP BASIS",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "development",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::Development",
+          "startPos": 0,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "production",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::Production",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "testing",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::Test",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "iib",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Systems::IIB",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "q/a",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "datapower",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Systems::DataPower",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "dev",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::Development",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "data power",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Systems::DataPower",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "qa",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "q&a",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "q & a",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "q and a",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::QA",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "prod",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::Production",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "test",
+      "intent": "intent.IdentifyEntity",
+      "entities": [
+        {
+          "entity": "Environment::Test",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    }
+  ]
+}

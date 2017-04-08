@@ -1,0 +1,17 @@
+{
+  "name": "data-api",
+  "version": "1.0.0",
+  "description": "REST APIs for data access to the Backend Systems",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manasa Sutapalli",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "mongoose": "^4.9.3"
+  }
+}
